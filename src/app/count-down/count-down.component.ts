@@ -9,7 +9,6 @@ import { take } from 'rxjs/operators';
 })
 export class CountDownComponent implements OnInit, OnDestroy {
   public countDownRemain = 5;
-  public numberPath = './app/count-down/numbers/5.PNG';
   private intervalSubs: Subscription;
 
   private initCountDown() {
@@ -17,14 +16,12 @@ export class CountDownComponent implements OnInit, OnDestroy {
       .pipe(take(5))
       .subscribe(() => {
         --this.countDownRemain;
-        //this.numberPath = `numbers/${this.countDownRemain}.PNG`;
       });
   }
 
   public restartCountDown() {
     this.intervalSubs.unsubscribe();
     this.countDownRemain = 5;
-    //this.numberPath = 'numbers/5.PNG';
     this.initCountDown();
   }
 
