@@ -1,17 +1,12 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Count Down</mat-card-title>
-  </mat-card-header>
+<mat-card class="count-down-card">
+  <mat-card-title class="count-down-title">Countdown</mat-card-title>
   <mat-card-content>
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>{{ countDownRemain }}</mat-card-title>
-      </mat-card-header>
-    </mat-card>
-  </mat-card-content>
-  <mat-card-actions>
+    <span class="count-down-remain">{{ countDownRemain }}</span
+    ><br />
     <button (click)="restartCountDown()" mat-icon-button>
-      <mat-icon>redo</mat-icon>
+      <mat-icon class="count-down-redo-button" matTooltip="test">
+        redo
+      </mat-icon>
     </button>
-  </mat-card-actions>
+  </mat-card-content>
 </mat-card>

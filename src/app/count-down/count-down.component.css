@@ -1,0 +1,17 @@
+.count-down-card {
+  max-width: 200px;
+  text-align: center;
+}
+
+.count-down-title {
+  font-weight: 500;
+}
+
+.count-down-remain {
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+.count-down-redo-button {
+  transform: scale(1.5);
+}
