@@ -1,8 +1,9 @@
 <mat-card>
   <mat-card-header>Count Down</mat-card-header>
-  
+  <img src="{{ numberPath }}" mat-card-image />
+  <mat-card-actions>
+    <button (click)="restartCountDown()" mat-icon-button>
+      <mat-icon>redo</mat-icon>
+    </button>
+  </mat-card-actions>
 </mat-card>
-<span>{{ countDownRemain }}</span>
-<p>
-  <button (click)="restartCountDown()">Restart</button>
-</p>
